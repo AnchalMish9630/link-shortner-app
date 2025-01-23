@@ -1,13 +1,20 @@
-import { Typography } from "@mui/material";
-import {Button} from "@mui/material";
+import { AppBar, Box, Toolbar, Typography } from "@mui/material";
+import {Button, } from "@mui/material";
 
 const Home = ()=>{
     return (
         <div>
-            <Typography>
-                Home
-            </Typography>
-            <Button variant="contained" color="red"> Hello </Button>
+            <AppBar>
+                <Toolbar>
+                <Typography variant="h6">
+                Shortly
+                </Typography>
+                <Box>
+                    <Button>Links</Button>
+                    <Button>Logout</Button>
+                </Box>
+                </Toolbar>
+            </AppBar>
         </div>
     )
 }
